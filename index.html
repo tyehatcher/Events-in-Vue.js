@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>events in vue</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+<button id="v1" onclick="v()">Button 1</button>
+<button onclick="function_v2()">Button 2</button>
+<input id='#app' type='text' placeholder="here type here" v-model="text" v-on:keyup.enter="printMethod(text)"/>
+
+<div class="box"onclick="box()"></div>
+<h1 id="demo">{{text}}</h1>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
